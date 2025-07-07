@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyFilters() {
     let filtered = Object.entries(allActivities);
     // Search filter
-    const search = document.getElementById("search-input").value.toLowerCase();
+    const search = searchInput.value.toLowerCase();
     if (search) {
       filtered = filtered.filter(([name, details]) =>
         name.toLowerCase().includes(search) ||
